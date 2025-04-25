@@ -47,6 +47,7 @@ h3 {
     font-weight: 700;
     line-height: 1;
     letter-spacing: 0.1rem;
+    padding-top: 2.5rem;
 }
 
 p {
@@ -132,7 +133,7 @@ button:hover {
 
 
 .componentSpacing {
-    padding: 2rem 0rem;
+    padding: 3rem 0rem;
     /* Breathing Space Between Components */
 }
 

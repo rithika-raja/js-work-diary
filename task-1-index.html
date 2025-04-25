@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practice-calculator</title>
+  <link rel="stylesheet" href="./css/task-1-style.css">
+  <link rel="stylesheet" href="./css/task-1-calculator.css">
+
+</head>
+
+<body>
+  <main>
+    <div class="calculator componentSpacing">
+      <div class="calculatorContainer screenSize">
+        <div class="calculatorBody grid-1">
+          <div class="calculatorBlock dflex-col">
+            <div class="calculatorBox">
+              <form action="">
+                <div class="headingBlock dflex">
+                  <div class="headingBox dflex">
+                    <h3>SIMPLE CALCULATOR</h3>
+                  </div>
+                  <div class="homeBox">
+                    <a href="./index.html" class="home-button">Home</a>
+                  </div>
+                </div>
+                <div class="formGrp dflex">
+                  <label for="num1"> Number-1:</label>
+                  <input id="num1" type="text" placeholder="Enter the first number">
+                </div>
+                <div class="formGrp dflex">
+                  <label for="num2"> Number-2:</label>
+                  <input id="num2" type="text" placeholder="Enter the second number">
+                </div>
+                <div class="formGrp dflex">
+                  <label for="operator">Choose a Arithimetic Operator:</label>
+                  <select id="operator" name="fruit">
+                    <option value="+">+ (Addition)</option>
+                    <option value="-">- (Subraction)</option>
+                    <option value="*">* (Multiplication)</option>
+                    <option value="/">/ (Division)</option>
+                  </select>
+                </div>
+                <div class="formGrp dflex">
+                  <button type="button" onclick="calculate()" class="cal-button">Calculate</button>
+                </div>
+                <div class="formGrp dflex">
+                  <input id="answer" value="Your Answer is here!" readonly>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./js/task-1-script.js"></script>
+</body>
+
+</html>

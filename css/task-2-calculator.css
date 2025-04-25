@@ -1,0 +1,104 @@
+.calculatorBox {
+    background-color: var(--darkColor);
+    font-family: var(--ffprimary);
+    border-radius: 3rem;
+    padding: 2rem;
+}
+
+.displayBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#display {
+    background-color: #3e3e3e;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 2.5rem;
+    text-align: right;
+    border: none;
+    color: var(--lightColor);
+}
+
+#answer {
+    background-color: #3e3e3e;
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: right;
+    border: none;
+    color: var(--lightColor);
+}
+
+button {
+    background-color: var(--secondaryColor);
+    color: var(--lightColor);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 2.5rem;
+    border: none;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #686666;
+    color: var(--lightColor);
+    transition: background-color 0.3s ease;
+}
+
+button:active {
+    background-color: #eae5e5;
+}
+
+.buttonColor {
+    background-color: var(--tertiaryColor);
+    color: var(--lightColor);
+    transition: background-color 0.3s ease;
+
+}
+
+.buttonColor:hover {
+    background-color: #bc3559;
+    color: var(--lightColor);
+    transition: background-color 0.3s ease;
+}
+
+.buttonColor:active {
+    background-color: #f685a3;
+    color: var(--lightColor);
+}
+
+.home-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--tertiaryColor);
+    font-family: var(--ffsecondary);
+    color: var(--lightColor);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.25rem 2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: var(--primaryColor);
+    color: var(--darkColor);
+    transition: background-color 0.3s ease;
+}

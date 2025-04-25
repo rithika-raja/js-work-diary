@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primaryColor);
+    font-family: "EB Garamond", serif;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0rem;
+    -webkit-font-smoothing: antialiased;
+    font-optical-sizing: auto;
+}
+
+h1 {
+    text-wrap: balance;
+    font-family: var(--ffprimary);
+    color: var(--lightColor);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-family: var(--ffprimary);
+    color: var(--lightColor);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+}
+
+p {
+    font-family: var(--ffsecondary);
+    color: var(--darkColor);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+}
+
+form {
+    background-color: var(--secondaryColor);
+    border-radius: 1rem;
+    margin: 2rem;
+}
+
+.formGrp {
+    /* background-color: #bfdbfe; */
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+input,
+textarea,
+label,
+option,
+select {
+    font-family: inherit;
+    font-family: var(--ffsecondary);
+    color: var(--darkColor);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    border-radius: 0.75rem;
+    border: none;
+    padding: 0.5rem 2rem;
+    width: 100%;
+    height: auto;
+}
+
+input {
+    background-color: var(--lightColor);
+}
+
+button {
+    background-color: var(--tertiaryColor);
+    font-family: var(--ffsecondary);
+    color: var(--lightColor);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.25rem 2rem;
+    margin: 1rem 0rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+    transition: background-color 0.3s ease;
+}
+
+:root {
+    --primaryColor: #e464e8;
+    --secondaryColor: #DCA06D;
+    --tertiaryColor: #210F37;
+    --darkColor: #000000;
+    --lightColor: #ffffff;
+    --regularFont: 1.6rem;
+    --headingFont: 4rem;
+    --ffPrimary: "EB Garamond", serif;
+    --ffSecondary: "Montserrat", sans-serif;
+    --border: 1px solid var(--tertiaryColor);
+    --borderRadius: 0.5rem;
+}
+
+
+.componentSpacing {
+    padding: 2rem 0rem;
+    /* Breathing Space Between Components */
+}
+
+.screenSize {
+    max-width: 1200px;
+    /* Device Screen Size */
+    margin: auto;
+    /* Left and right Center */
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+}
+
+
+.dflex {
+    display: flex;
+    /* without this wont work */
+    align-items: center;
+    /* top & bottom Alignment */
+    justify-content: center;
+    /* left & right Alignment */
+    text-align: center;
+}
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    /* makes top to bottom align */
+    align-items: center;
+    /* Behaves like a justify-content */
+    justify-content: center;
+    /* Behaves like a align-items */
+    text-align: center;
+}
+
+main {
+    /* background-color: #ffbf00; */
+    width: 100%;
+    height: auto;
+}
+
+/* @media (width <=576px) */
+@media (max-width: 360px) {
+    body{
+        /* background-color: #000000; */
+    }
+    .grid-1 {
+        grid-template-columns: 1fr;
+        padding: 0rem 1rem;
+    }
+    .gradeBox{
+        padding: 0rem;
+        margin: 0rem;
+        width: 100%;
+    }
+    form{
+        margin: 0rem;
+        padding: 0rem;
+    }
+    .fromGrp{
+        /* background-color: #210F37; */
+        padding: 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    form .fromGrp label{
+        /* background-color: #4F1C51; */
+        width: 100%;
+    }
+    
+}

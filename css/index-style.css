@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0F4953;
+    font-family: "EB Garamond", serif;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-optical-sizing: auto;
+}
+
+h1 {
+    text-wrap: balance;
+    font-family: var(--ffprimary);
+    color: var(--lightColor);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+h2{
+    font-family: var(--ffprimary);
+    color: var(--secondaryColor);
+    font-size: 6.5rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+}
+
+p {
+    font-family: var(--ffsecondary);
+    color: var(--darkColor);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+}
+
+.primary_button {
+    font-size: 1.5rem;
+    background-color: var(--secondaryColor);
+    font-weight: 600;
+    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+    padding: 0.75rem 3rem;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .primary_button:hover {
+    font-size: 1.5rem;
+    background-color: #000000;
+    font-weight: 600;
+    border-radius: 1rem;
+    padding: 0.75rem 3rem;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+
+:root {
+    --primaryColor: #0F4953;
+    --secondaryColor: #F98E6E;
+    --tertiaryColor: #CBF5EF;
+    --darkColor: #000000;
+    --lightColor: #ffffff;
+    --regularFont: 1.6rem;
+    --headingFont: 4rem;
+    --ffPrimary: "EB Garamond", serif;
+    --ffSecondary: "Montserrat", sans-serif;
+    --border: 1px solid var(--tertiaryColor);
+    --borderRadius: 0.5rem;
+}
+
+
+.componentSpacing {
+    padding: 3rem 0rem;
+    /* Breathing Space Between Components */
+}
+
+.screenSize {
+    max-width: 1200px;
+    /* Device Screen Size */
+    margin: auto;
+    /* Left and right Center */
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0rem 2rem;
+}
+
+.dflex {
+    display: flex;
+    /* without this wont work */
+    align-items: center;
+    /* top & bottom Alignment */
+    justify-content: center;
+    /* left & right Alignment */
+}
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    /* makes top to bottom align */
+    align-items: center;
+    /* Behaves like a justify-content */
+    justify-content: center;
+    /* Behaves like a align-items */
+    text-align: center;
+}
+
+main {
+    /* background-color: #ffbf00; */
+    width: 100%;
+    height: auto;
+}
+
+/* @media (width <=576px) */
+@media (max-width: 576px) {
+    .grid-1,
+    .grid-5 {
+      grid-template-columns: 1fr;
+      padding: 0rem 1rem;
+    }
+  }

@@ -1,0 +1,117 @@
+.learning {
+    /* background-color: #f0f8ff; */
+    /* Alice Blue */
+}
+
+.learningContainer {
+    /* background-color: #fff0f5; */
+    /* Lavender Blush */
+    padding: 2rem;
+}
+
+.headingBody {
+    /* background-color: #f5f5dc; */
+    /* Beige */
+}
+
+.headingBlock {
+    /* background-color: var(--secondaryColor); */
+    /* Light Goldenrod Yellow */
+}
+
+.headingBox {
+    /* background-color: #d8bfd8; */
+    width: 100%;
+    height: auto;
+    /* Thistle */
+}
+
+.headingBox h1 {
+    /* background-color: #ffb6c1; */
+    /* Light Pink */
+    /* font-family: var(--ffprimary);
+    color: var(--lightColor);
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem; */
+    padding: 1rem 0rem;
+}
+
+.learningBody {
+    /* background-color: #ffe4e1; */
+    /* Misty Rose */
+    gap: 3rem;
+}
+
+.learningBlock {
+    /* background-color: #e0ffe0; */
+    /* Minty Light Green */
+    padding: 3rem 0rem;
+}
+
+.learningBox {
+    background-color: var(--tertiaryColor);
+    width: 100%;
+    height: 100%;
+    border: var(--lightColor) solid 1rem;
+    border-radius: 1.5rem;
+    padding: 1rem 1rem;
+    /* Peach Puff Tint */
+}
+
+.cardHeader {
+    background-color: #ffffff;
+    /* background-image: url(./assests/images/gradient.jpg); */
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+    padding: 5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.cardHeader h2 {
+    /* background-color: #98fb98; */
+    width: 100%;
+    height: 100%;
+    /* font-family: var(--ffprimary);
+    color: var(--secondaryColor);
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.1rem; */
+    /* Pale Green */
+}
+
+.cardMain {
+    /* background-color: #f08080; */
+    /* Light Coral */
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+}
+
+.cardMain p {
+    /* background-color: #afeeee; */
+    /* Pale Turquoise */
+    /* font-family: var(--ffsecondary); */
+    /* color: var(--darkColor); */
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    /* display: flex;
+    align-items: start;
+    justify-content: start; */
+    /* font-weight: 500; */
+    /* line-height: 1.5; */
+    /* letter-spacing: 0.1rem; */
+    /* margin-bottom: 1rem; */
+}
+
+.cardMain button{
+    /* background-color: #c799f3; */
+    /* margin-bottom: 1rem; */
+}

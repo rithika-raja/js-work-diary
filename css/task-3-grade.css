@@ -1,0 +1,52 @@
+.gradeBox{
+    width: 100%;
+    height: auto;
+}
+
+form {
+    background-color: var(--secondaryColor);
+    border-radius: 1rem;
+    margin: 3rem 1rem;
+    padding: 1rem;
+}
+.fromGrp {
+    /* background-color: #bfdbfe; */
+    margin: 3rem;
+}
+form .fromGrp label{
+    /* background-color: aqua; */
+    width: 100%;
+}
+#grade {
+    /* background-color: #dbeafe; */
+    font-family: var(--ffsecondary);
+    color: var(--darkColor);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+}
+.home-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--tertiaryColor);
+    font-family: var(--ffsecondary);
+    color: var(--lightColor);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    border-radius: 0.5rem;
+    border: var(--lightColor) solid 0.1rem;
+    padding: 0.25rem 2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+    border: var(--lightColor) solid 0.1rem;
+    transition: background-color 0.3s ease;
+}

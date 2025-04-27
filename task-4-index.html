@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EB Bill Calculator</title>
+    <link rel="stylesheet" href="./css/task-4-style.css">
+    <link rel="stylesheet" href="./css/task-4-eb.css">
+    <link rel="shortcut icon" href="./assests/images/learning.png" type="image/x-icon">
+    <!-- Font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <div class="ebbill componentSpacing">
+            <div class="ebContainer screenSize">
+                <!-- <div class="headingBody grid-1">
+                    <div class="headingBlock">
+                        <div class="headingBox dflex">
+                            <h1>TNEB GENERATOR</h1>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="homeBox">
+                    <a href="./index.html" class="home-button">Home</a>
+                </div>
+                <div class="ebBody grid-1">
+                    <div class="ebBlock dflex-col">
+                        <div class="ebBox">
+                            <form action="">
+                                <h3> EB Bill Calculator</h3>
+                                <div class="formGrp dflex">
+                                    <label for="user_name">Name:</label>
+                                    <input type="text" id="user_name" placeholder="Enter your name">
+                                </div>
+                                <div class="formGrp dflex">
+                                    <label for="user_unit">Consumed EB unit(kwh):</label>
+                                    <input type="text" id="user_unit" placeholder="Enter the units">
+                                </div>
+                                <div class="formGrp dflex">
+                                    <label for="unit_type">EB Type:</label>
+                                    <select name="unit_type" id="unit_type">
+                                        <option value="">---Seclect type---</option>
+                                        <option value="1">Domestic</option>
+                                        <option value="2">Commercial</option>
+                                    </select>
+                                </div>
+                                <div class="formGrp dflex">
+                                    <button type="button" onclick="calculate()">Generate Bill Amount</button>
+                                </div>
+                                <div class="formGrp dflex">
+                                    <label for="amount">Payable Bill Amount:</label>
+                                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                                    <input type="text" id="amount" placeholder="0" readonly>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- <div class="calculationBlock dflex-col">
+                        <div class="calculationBox dflex-col">
+                            <h3>EB Bill Calculation</h3>
+                            <div class="cal_data">
+                                <table>
+                                    <tr>
+                                        <th colspan="2">Consumed Units</th>
+                                        <th>430</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Units</th>
+                                        <th>Rate</th>
+                                        <th>Price</th>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">TOTAL</td>
+                                        <td id="t_amount"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="formGrp dflex">
+                                <label for="amount">Payable Bill Amount:</label>
+                                <input type="text" id="amount" placeholder="0" readonly>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/task-4-script.js"></script>
+</body>
+
+</html>

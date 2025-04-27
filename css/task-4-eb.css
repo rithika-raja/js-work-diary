@@ -1,0 +1,65 @@
+.calculationBox{
+    background-color: var(--secondaryColor);
+    padding: 2rem;
+    border: var(--lightColor) solid 0.2rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.ebBox{
+    /* background-color: aquamarine; */
+}
+.headingBody{
+    /* background-color: yellowgreen; */
+    margin-bottom: 2rem;
+}
+.ebBody{
+    /* background-color: bisque; */
+}
+.ebBlock{
+    /* background-color: aqua; */
+}
+.cal_data{
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+table{
+    width: 100%;
+}
+table, th, td{
+    /* background-color: aqua; */
+    border: 0.1rem solid var(--lightColor);
+    border-collapse: collapse ;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+.home-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--primaryColor);
+    font-family: var(--ffsecondary);
+    color: var(--lightColor);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    border: none;
+    padding: 0.25rem 2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: var(--darkColor);
+    color: var(--lightColor);
+    transition: background-color 0.3s ease;
+}

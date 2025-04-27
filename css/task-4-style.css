@@ -16,77 +16,114 @@ html {
 }
 
 body {
-    background-color: var(--primaryColor);
+    background-color: var(--tertiaryColor);
     font-family: "EB Garamond", serif;
     line-height: 1.5;
     font-size: 1.6rem;
     font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0rem;
     -webkit-font-smoothing: antialiased;
     font-optical-sizing: auto;
 }
 
 h1 {
+    background-color: var(--darkColor);
     text-wrap: balance;
     font-family: var(--ffprimary);
     color: var(--lightColor);
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
     line-height: 1;
     letter-spacing: 0.1rem;
-    margin-bottom: 1rem;
+    padding: 1.5rem;
+    width: 100%;
 }
 
-h2 {
+h3 {
+    background-color: var(--darkColor);
     font-family: var(--ffprimary);
-    color: var(--secondaryColor);
-    font-size: 6.5rem;
+    color: var(--primaryColor);
+    color: var(--lightColor);
+    font-size: 3rem;
     font-weight: 700;
     line-height: 1;
     letter-spacing: 0.1rem;
+    padding: 1rem;
+    width: 100%;
 }
 
 p {
     font-family: var(--ffsecondary);
     color: var(--darkColor);
-    font-size: 2.25rem;
-    font-weight: 600;
+    font-size: 2.5rem;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.1rem;
 }
 
-input,
-textarea,
-button {
-    font-family: inherit;
+form {
+    background-color: var(--secondaryColor);
+    padding: 2rem;
+    border: var(--lightColor) solid 0.2rem;
 }
 
-.primary_button {
-    font-size: 2rem;
-    background-color: var(--secondaryColor);
-    font-weight: 600;
+.formGrp {
+    /* background-color: #bfdbfe; */
+    gap: 1rem;
+    padding: 1rem 0rem;
     width: 100%;
     height: auto;
-    padding: 0.75rem 3rem;
-    color: #ffffff;
-    text-decoration: none;
+}
+
+input,
+textarea,
+label,
+option,
+select {
+    font-family: inherit;
+    font-family: var(--ffsecondary);
+    color: var(--darkColor);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
     border: none;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    height: auto;
+}
+
+input {
+    background-color: var(--lightColor);
+}
+
+button {
+    background-color: var(--primaryColor);
+    font-family: var(--ffsecondary);
+    color: var(--lightColor);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    border: none;
+    padding: 0.25rem 1rem;
+    margin: 1rem 0rem;
     transition: background-color 0.3s ease;
 }
 
-.primary_button:hover {
-    font-size: 2rem;
+button:hover {
     background-color: var(--darkColor);
-    font-weight: 600;
-    padding: 0.75rem 3rem;
-    color: #ffffff;
-    border: none;
+    color: var(--lightColor);
     transition: background-color 0.3s ease;
 }
 
 :root {
-    --primaryColor: #343131;
-    --secondaryColor: #A04747;
-    --tertiaryColor: #D8A25E;
+    --primaryColor: #657C6A;
+    --secondaryColor: #BB3E00;
+    --tertiaryColor: #F7AD45;
     --darkColor: #000000;
     --lightColor: #ffffff;
     --regularFont: 1.6rem;
@@ -116,11 +153,11 @@ button {
     padding: 0rem 2rem;
 }
 
-.grid-5 {
+.grid-2 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
     padding: 0rem 2rem;
+    gap: 2rem;
 }
 
 .dflex {
@@ -130,6 +167,7 @@ button {
     /* top & bottom Alignment */
     justify-content: center;
     /* left & right Alignment */
+    text-align: center;
 }
 
 .dflex-col {
@@ -150,28 +188,53 @@ main {
 }
 
 /* @media (width <=576px) */
-@media (max-width: 576px) {
+@media (max-width: 360px) {
+    body {
+        /* background-color: #000000; */
+    }
+
     .grid-1,
-    .grid-5 {
+    .grid-2 {
         grid-template-columns: 1fr;
         padding: 0rem 1rem;
     }
-   
-    .headingBox{
-        /* background-color:#CBF5EF; */
-        width: 100%;
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    } 
-    h1 {
-        font-family: var(--ffprimary);
-        color: var(--lightColor);
-        font-size: 4.5rem;
-        font-weight: 700;
-        line-height: 1;
-        letter-spacing: 0.1rem;
+    form {
+        background-color: var(--secondaryColor);
+        padding: 1rem;
+        border: var(--lightColor) solid 0.2rem;
     }
+
+    input,
+    textarea,
+    label,
+    option,
+    select {
+        font-size: 1.75rem;
+        padding: 0.5rem 1rem;
+    }
+
+    input {
+        background-color: var(--lightColor);
+    }
+
+    button {
+        background-color: var(--primaryColor);
+        font-family: var(--ffsecondary);
+        color: var(--lightColor);
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.1rem;
+        border: none;
+        padding: 0.25rem 2rem;
+        margin: 1rem 0rem;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: var(--darkColor);
+        color: var(--lightColor);
+        transition: background-color 0.3s ease;
+    }
+
 }

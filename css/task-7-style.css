@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--lightColor);
+    font-family: "EB Garamond", serif;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0rem;
+    -webkit-font-smoothing: antialiased;
+    font-optical-sizing: auto;
+}
+
+h1 {
+    text-wrap: balance;
+    font-family: var(--ffprimary);
+    color: var(--lightColor);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    background-color: var(--darkColor);
+    font-family: var(--ffprimary);
+    color: var(--lightColor);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+}
+
+p {
+    font-family: var(--ffsecondary);
+    color: var(--darkColor);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    background-color: var(--lightColor);
+    width: 100%;
+}
+
+input,
+textarea,
+label,
+option,
+select {
+    font-family: inherit;
+    font-family: var(--ffsecondary);
+    color: var(--darkColor);
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    border: none;
+    padding: 0.75rem 2rem;
+    width: 100%;
+    height: auto;
+}
+
+input {
+    background-color: var(--lightColor);
+    /* width: 40%; */
+}
+
+button {
+    background-color: var(--lightColor);
+    border: var(--darkColor) solid 0.25rem;
+    color: var(--darkColor);
+    border-radius: 5rem;
+    font-family: var(--ffsecondary);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    padding: 0.25rem 2rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--darkColor);
+    color: var(--lightColor);
+    border: var(--lightColor) solid 0.25rem;
+    transition: background-color 0.3s ease;
+}
+.home-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    text-decoration: none;
+    background-color: var(--lightColor);
+    border: var(--darkColor) solid 0.25rem;
+    color: var(--darkColor);
+    border-radius: 5rem;
+    font-family: var(--ffsecondary);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    padding: 0.25rem 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: var(--darkColor);
+    color: var(--lightColor);
+    border: var(--lightColor) solid 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+.characterBox{
+    background-color: var(--tertiaryColor);
+    width: 100%;
+    height: auto;
+    border: var(--darkColor) solid 0.5rem;
+}
+.formGrp{
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+}
+:root {
+    --primaryColor: #C7D9DD;
+    --secondaryColor: #ADB2D4;
+    --tertiaryColor: #EEF1DA;
+    --darkColor: #000000;
+    --lightColor: #ffffff;
+    --regularFont: 1.6rem;
+    --headingFont: 4rem;
+    --ffPrimary: "EB Garamond", serif;
+    --ffSecondary: "Montserrat", sans-serif;
+    --border: 1px solid var(--tertiaryColor);
+    --borderRadius: 0.5rem;
+}
+
+
+.componentSpacing {
+    padding: 3rem 0rem;
+    /* Breathing Space Between Components */
+}
+
+.screenSize {
+    max-width: 1200px;
+    /* Device Screen Size */
+    margin: auto;
+    /* Left and right Center */
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+}
+
+
+.dflex {
+    display: flex;
+    /* without this wont work */
+    align-items: center;
+    /* top & bottom Alignment */
+    justify-content: center;
+    /* left & right Alignment */
+    text-align: center;
+}
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    /* makes top to bottom align */
+    align-items: center;
+    /* Behaves like a justify-content */
+    justify-content: center;
+    /* Behaves like a align-items */
+    text-align: center;
+}
+
+main {
+    /* background-color: #ffbf00; */
+    width: 100%;
+    height: auto;
+}
+
+/* @media (width <=576px) */
+@media (max-width: 360px) {
+    .grid-1 {
+        grid-template-columns: 1fr;
+        padding: 0rem 1rem;
+    }
+    
+}

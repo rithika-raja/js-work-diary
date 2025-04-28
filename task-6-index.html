@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Vowels</title>
+    <link rel="stylesheet" href="./css/task-6-style.css">
+    <link rel="shortcut icon" href="./assests/images/learning.png" type="image/x-icon">
+    <!-- Font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="vowels componentSpacing">
+        <div class="vowelsContainer screenSize">
+            <div class="vowelsBody grid-1">
+                <div class="vowelsBlock">
+                    <div class="homeBox">
+                        <a href="./index.html" class="home-button">Home</a>
+                      </div>
+                    <div class="vowelsBox dflex-col">
+                        <h3>Vowel Finder</h3>
+                        <div class="formGrp dflex">
+                            <label for="textInput">Enter text:</label>
+                            <input type="text" id="textInput" placeholder="Type something...">
+                        </div>
+                        <div class="formGrp dflex-col">
+                            <button onclick="findVowels()">Find Vowels</button>
+                            <p id="result"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/task-6-script.js"></script>
+</body>
+
+</html>

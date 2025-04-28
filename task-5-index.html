@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Checker</title>
+    <link rel="stylesheet" href="./css/task-5-style.css">
+    <link rel="shortcut icon" href="./assests/images/learning.png" type="image/x-icon">
+    <!-- Font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="prime componentSpacing">
+        <div class="primeContainer screenSize">
+            <div class="primeBody grid-1">
+                <div class="primeBlock dflex-col">
+                    <div class="homeBox">
+                        <a href="./index.html" class="home-button">Home</a>
+                      </div>
+                    <div class="primeBox">
+                        <h3>Prime Number Checker</h3>
+                        <div class="formGrp dflex">
+                            <label for="numberInput">Enter a number:</label>
+                            <input type="text" id="numberInput" placeholder="Enter a number">
+                        </div>
+                        <div class="formGrp dflex-col">
+                            <button onclick="checkPrime()">Check Prime</button>
+                            <p id="result"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/task-5-script.js"></script>
+</body>
+</html>

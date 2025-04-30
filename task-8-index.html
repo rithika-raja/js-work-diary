@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="./css/task-8-style.css">
+    <link rel="shortcut icon" href="./assests/images/learning.png" type="image/x-icon">
+    <!-- Font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="len componentSpacing">
+        <div class="lenContainer screenSize">
+            <div class="homeBox">
+                <a href="./index.html" class="home-button">Home</a>
+            </div>
+            <h1>Convertor</h1>
+            <div class="Body grid-3">
+                <div class="lenBody">
+                    <div class="lenBlock">
+                        <h3>cm to inches</h3>
+                        <div class="lenBox">
+                            <input type="text" id="inputValue" placeholder="length in cm">
+                        </div>
+                        <div class="button">
+                            <button type="button" onclick="convertcm()">Convert</button>
+                        </div>
+                        <div>
+                            <p id="result1">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lenBody">
+                    <div class="lenBlock">
+                        <h3>Celcius to Fahrenheit</h3>
+                        <div class="lenBox">
+                            <input type="text" id="input" placeholder="Value in C">
+                        </div>
+                        <div class="button">
+                            <button type="button" onclick="convertc()">Convert</button>
+                        </div>
+                        <div>
+                            <p id="result2">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lenBody">
+                    <div class="lenBlock">
+                        <h3>px to rem</h3>
+                        <div class="lenBox">
+                            <input type="text" id="pxInput" placeholder="Value in px">
+                        </div>
+                        <div class="button">
+                            <button type="button" onclick="convertrem()">Convert</button>
+                        </div>
+                        <div>
+                            <p id="result3">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/task-8-script.js"></script>
+</body>
+
+</html>
